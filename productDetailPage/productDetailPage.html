@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="productDetailPage.css"/>
+        <title>Product Detail Page</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <!-- Navigation bar -->
+            <nav class="main-nav">           
+                <div class="main-nav__logo">
+                    <img class="main-nav--logo-height" src="logo/logo-1.png" atl="barca logo">
+                </div>
+                <a href="#" class="main-nav__btn">
+                    <span class="main-nav__btn-line"></span>
+                    <span class="main-nav__btn-line"></span>
+                    <span class="main-nav__btn-line"></span>
+                </a>
+                <div class="main-nav__items-container">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../index.html">Home</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../productsPage/productsPage.html">&nbsp;Kits&nbsp;</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../searchPage/searchPage.html">Search</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../contactPage/contactPage.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Empty space for main nav-->
+        <section class="empty-space-for-main-nav"></section>
+        <!-- Main section -->
+        <main class="product">
+            <section class="free-shipping-free-return">
+                <p class="free-shipping-free-return__content">Free Shipping & 60-Day Free Returns</p>
+            </section>
+            <div class="product__container">
+                <!-- Product images -->
+                <div class="product__images">
+                    <div class="product__image-container">
+                        <img class="product__image" src="product-detail-images/image-1.jpeg" alt="FC Barcelona Player’s Home Shirt 21/22">
+                    </div>
+                    <div class="product__image-container">
+                        <img class="product__image" src="product-detail-images/image-2.jpeg" alt="FC Barcelona Player’s Home Shirt 21/22">
+                    </div>
+                    <div class="product__image-container">
+                        <img class="product__image" src="product-detail-images/image-3.jpeg" alt="FC Barcelona Player’s Home Shirt 21/22">
+                    </div>
+                    <div class="product__image-container">
+                        <img class="product__image" src="product-detail-images/image-4.jpeg" alt="FC Barcelona Player’s Home Shirt 21/22">
+                    </div>
+                </div>
+                <!-- Product order info -->
+                <div class="product__main-info">
+                    <h2 class="product__name">FC Barcelona Player’s Home Shirt 21/22</h2>
+                    <h3 class="product__size">Size</h3>
+                    <select class="product__select-drop-down">
+                        <option value="/">Select your size</option>
+                        <option value="/">S</option>
+                        <option value="/">M</option>
+                        <option value="/">L</option>
+                        <option value="/">XL</option>
+                        <option value="/">XXL</option>
+                    </select>
+                    <h3 class="product__quantity">Quantity</h3>
+                    <select class="product__select-quantity">
+                        <option value="/">1</option>
+                        <option value="/">2</option>
+                        <option value="/">3</option>
+                        <option value="/">4</option>
+                        <option value="/">5</option>
+                    </select>
+                    <!-- Convert to USD/EUR section -->
+                    <section class="convert-btns">
+                        <button id="btnUSD" class="convert-btn">Convert to USD</button>
+                        <button id="btnEUR" class="convert-btn">Convert to EUR</button>
+                    </section>
+                    <div class="product__price">Total: <span id="product-1">145,00 €</span></div>
+                    <p><button class="product__btn">Add to Cart</button></p>
+                    <h4 class="product__description-title">Description</h4>
+                    <p class="product__description-info">FC Barcelona Player’s exclusive home shirt 21/22 for La Liga matches with the official patches.</p>
+                    <p class="product__description-info">The new kit draws on the Club crest, retaining the essence of the Barcelona colours. The Catalan flag on the back of the shirt, just below the collar, reinforces the bond between the team and the Catalan spirit. Featuring La Liga logo patch on the right sleeve. Its Nike Dri-FIT ADV technology features elastic, quick-drying fabric to prevent chafing and fight humidity. Move to Zero is Nike’s new commitment to the environment, which guarantees the use of at least 75% recycled fibres with the aim of reducing carbon emissions. Colour: Blue and scarlet.</p>
+                    <p class="product__description-info">Composition and care</p>
+                    <p class="product__description-info">Nike Dri-FIT ADV technology combines sweat-wicking fabric with advanced engineering and features that maintain breathability and comfort. We have used fibres that open when you sweat and close on cooling to maintain the ideal temperature. 100% polyester. Machine wash at 40ºC max.</p>
+                    <p class="product__description-info">Size and adjustment</p>
+                    <p class="product__description-info">Slim fit</p>
+                </div>
+            </div>
+        </main>
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer__content">
+                <h2 class="footer__header">barça</h2>
+                <p class="footer__copyright">Copyright &copy;2021 Barça Official Online Store. Designed by MaksSolutions.</p>
+            </div>
+        </footer>
+        <script src="productDetailPage.js"></script>
+    </body>
+</html>

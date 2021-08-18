@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="searchPage.css"/>
+        <title>Search Page</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <!-- Navigation bar -->
+            <nav class="main-nav">           
+                <div class="main-nav__logo">
+                    <img class="main-nav--logo-height" src="logo/logo-1.png" atl="barca logo">
+                </div>
+                <a href="#" class="main-nav__btn">
+                    <span class="main-nav__btn-line"></span>
+                    <span class="main-nav__btn-line"></span>
+                    <span class="main-nav__btn-line"></span>
+                </a>
+                <div class="main-nav__items-container">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../index.html">Home</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../productsPage/productsPage.html">&nbsp;Kits&nbsp;</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="./searchPage.html">Search</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../contactPage/contactPage.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Empty space for main nav -->
+        <section class="empty-space-for-main-nav"></section>
+        <!-- Main section -->
+        <main>
+            <!-- Banner image section -->
+            <section class="banner">
+                <img class="banner__image" src="banner/banner-1.jpeg" alt="barca banner home jersey 2021/22">
+                <img class="banner__image-mobile" src="banner/banner-2.jpeg" alt="barca banner home jersey 2021/22">
+            </section>
+            <!-- Search bar -->
+            <div class="search-container">
+                <input type="text" onkeyup="searchFilter()" id="search__field" placeholder="Search..">   
+                <ul id="search__menu"> 
+                    <li><a href="#">Home Kit</a></li>
+                    <li><a href="#">Away Kit</a></li>
+                    <li><a href="#">3rd Kit</a></li>
+                    <li><a href="#">4th Kit</a></li>
+                    <li><a href="#">Black Kit</a></li>
+                    <li><a href="#">FC Barcelona Player’s Home Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Men Home Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Player’s Away Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Men Away Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Player’s Third Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Men Third Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Men Fourth Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Player’s Black Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Player´s Home Feminine Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Home Feminine Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Player´s Away Feminine Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Away Feminine Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Player´s Third Feminine Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Third Feminine Shirt 21/22</a></li>
+                    <li><a href="#">FC Barcelona Fourth Feminine Shirt 21/22</a></li>
+                    <li><a href="#">95,00 €</a></li>
+                    <li><a href="#">120,00 €</a></li>
+                    <li><a href="#">145,00 €</a></li>
+                    <li><a href="#">165,00 €</a></li>
+                </ul>
+            </div>
+        </main>
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer__content">
+                <h2 class="footer__header">barça</h2>
+                <p class="footer__copyright">Copyright &copy;2021 Barça Official Online Store. Designed by MaksSolutions.</p>
+            </div>
+        </footer>
+        <script src="searchPage.js"></script>
+    </body>
+</html>

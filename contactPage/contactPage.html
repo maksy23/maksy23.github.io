@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="contactPage.css"/>
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <!-- Navigation bar -->
+            <nav class="main-nav">           
+                <div class="main-nav__logo">
+                    <img class="main-nav--logo-height" src="logo/logo-1.png" atl="barca logo">
+                </div>
+                <a href="#" class="main-nav__btn">
+                    <span class="main-nav__btn-line"></span>
+                    <span class="main-nav__btn-line"></span>
+                    <span class="main-nav__btn-line"></span>
+                </a>
+                <div class="main-nav__items-container">
+                    <ul class="main-nav__items">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../index.html">Home</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="../productsPage/productsPage.html">&nbsp;Kits&nbsp;</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content "href="../searchPage/searchPage.html">Search</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-content" href="./contactPage.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Empty space for main nav -->
+        <section class="empty-space-for-main-nav"></section>
+        <!-- Main section -->
+        <main>
+            <!-- Banner image section -->
+            <section class="banner">
+                <img class="banner__image" src="banner/banner-1.jpeg" alt="barca banner home jersey 2021/22">
+                <img class="banner__image-mobile" src="banner/banner-2.jpeg" alt="barca banner home jersey 2021/22">
+            </section>
+            <!-- Contact us message -->
+            <section class="contact">
+                <p class="contact-info">Have any questions or feedback?<br>Contact Us!</p>
+            </section>
+            <!-- Form -->
+            <section class="form-container">
+                <form name="contactForm" class="form" onsubmit="return validateForm()">
+                    <!-- <h2 class="form__h2">Contact Us</h2> -->
+                    <label for="firstName" class="form__label">First Name</label>
+                        <input type="text" id="form__first-name" class="form__input" name="firstName" placeholder="Your name..">
+                    <label for="lastName" class="form__label">Last Name</label>
+                        <input type="text" id="form__last-name" class="form__input" name="lastName" placeholder="Your last name..">
+                    <label for="email" class="form__label">Email</label>
+                        <input type="text" id="form__email" class="form__input" name="email" placeholder="Your email..">
+                    <label for="phoneNumber" class="form__label">Phone</label>
+                        <input type="text" id="form__phone-number" class="form__input" name="phoneNumber" placeholder="Your phone number..">
+                    <label for="preferred-contact-method" class="form__label">Preferred Contact Method</label>
+                        <input type="radio" class="form__radio-option" name="preferredContactMethod" value="phone">
+                            <label>Phone</label><br>
+                        <input type="radio" class="form__radio-option" name="preferredContactMethod" value="email">
+                            <label>Email</label><br>
+                    <label for="how-did-you-hear-about-us" class="form__label">How did you hear about us?</label>
+                        <input type="checkbox" id="form__checkbox-friend" class="form__checkbox-option" name="checkbox" value="friend">
+                            <label for="riend">Friend</label><br>
+                        <input type="checkbox" id="form__checkbox-social-media" class="form__checkbox-option" name="checkbox" value="social-media">
+                            <label for="social-media">Social Media</label><br>
+                        <input type="checkbox" id="form__checkbox-search-engine" class="form__checkbox-option" name="checkbox" value="search-engine">
+                            <label for="search-engine">Search Engine (Google, Yahoo, etc.)</label><br>
+                        <input type="checkbox" id="form__checkbox-television" class="form__checkbox-option" name="checkbox" value="television">
+                            <label for="television">Television</label><br>
+                        <input type="checkbox" id="form__checkbox-other" class="form__checkbox-option" name="checkbox" value="other">
+                            <label for="other">Other</label><br>
+                    <label for="comments" class="form__label">Comments</label>
+                        <textarea id="form__comments" name="comments" placeholder="Write something.."></textarea>
+                    <input type="submit" id="form__submit-btn" value="Submit">
+                </form>
+            </section>
+        </main>
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer__content">
+                <h2 class="footer__header">barça</h2>
+                <p class="footer__copyright">Copyright &copy;2021 Barça Official Online Store. Designed by MaksSolutions.</p>
+            </div>
+        </footer>
+        <script src="contactPage.js"></script>
+    </body>
+</html>
